@@ -16,7 +16,6 @@ export default class UI {
     
           `;
     list.appendChild(row);
-  
   }
 
   static deleteBook(el) {
