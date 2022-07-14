@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+    <title>Awesome Books Library</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-down"></i>
+            <input type="search" placeholder="https://">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </nav>
+    </header>
+    <main>
+       <nav class="select">
+        <ul>
+            <li>Awesome Books</li>
+        </ul>
+            <ul class="select-links">
+                <li id="list-btn"><a href="#">List</a></li>
+                <li id="add-btn"><a href="#">Add new</a></li>
+                <li id="contact-btn"><a href="#">Contact</a></li>
+
+            </ul>
+       </nav>
+        <section id="all-books" class="all-books">
+            <span id="date"></span>
+            <h1 class="desktop">All Awesome Books</h1>
+            <h1 class="mobile">All Awesome Books</h1>
+           <table>
+              <thead>
+                  <tr>
+                     <th>Author</th>
+                     <th>Title</th>
+                   </tr>
+            
+                </thead>
+                <tbody id="tablebody">
+
+           
+                 </tbody>
+           </table>
+        </section>
+        <section id="new-book" class="inactive">
+            <h1 class="desktop">Add A New Book</h1>
+            <h1 class="mobile">Add A New Book</h1>
+            <form  id="form-Book" class="form-book">
+               <label >Author</label>
+               <input type="text" name="Author" id="authorname" placeholder="Author" required>
+               <br><br>
+               <label >Title</label>
+               <input type="text" name="Title" id="titlename" placeholder="Title" required>
+               <br><br>
+           
+               <input type="submit" value="Add" id="addbutton" >
+            </form>
+        </section>
+        <section id="contact" class="contact inactive">
+            <h2>Contact Information</h2><br>
+            <div>
+                <p>Do you have any questions or you just want to say "Hello"?<br>
+                You can reach out to us!</p><br>
+                <ul>
+                    <li>Our e-mail: mail@mail.com</li>
+                    <li>Our phone number: 004358534422</li>
+                    <li>Our address: Streetname 22, 84503 City, Country</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text"><p>&copy; Baslambo Enterprise</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              voluptate blanditiis aliquam.</p></div>
+          </div>
+    </footer>
+    <script type="module"  src="index.js"></script>
+</body>
+</html>
